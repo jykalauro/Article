@@ -1,0 +1,105 @@
+.article-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.article {
+    margin-bottom: 20px;
+    padding: 90px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.picture-container {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.picture-container img {
+    width: 80%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.description-container {
+    width: 50%;
+}
+
+.description-container h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.description-container p {
+    font-size: 16px;
+    color: #310d0d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 90;
+}
+
+.logo {
+    font-size: 2em;
+    color: #ffffff;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;;
+}
+.navigation .btnLogin-popup {
+    width: 100px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #ffffff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: #fff;
+    color: #162938;
+    
+}
